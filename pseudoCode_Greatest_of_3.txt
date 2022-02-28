@@ -1,0 +1,17 @@
+BEGIN
+ 
+NUMBER A,B,C
+ 
+INPUT A
+INPUT B
+INPUT C
+ 
+IF A>B AND A>C  THEN
+     OUTPUT A+ "is higher"
+ELSE IF B > C THEN
+     OUTPUT B + "is higher"
+ELSE
+     OUTPUT C+ "is higher"
+ENDIF
+ 
+END
