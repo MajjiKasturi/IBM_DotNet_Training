@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyfirstConsole
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //datatypes 
+            int num = 10; // integer
+            double d = 20.02; //double
+            Boolean z= true;
+            Console.Write(num);
+            Console.Write(d);
+            Console.Write(z);
+            //conditional statements
+            int a, b;
+            Console.WriteLine(" Enter the values ");
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            if (a > b)
+            {
+                Console.WriteLine(" a is greatest ");
+            }
+            else
+            {
+                Console.WriteLine(" b is greatest");
+            }
+            //Find the greatest of 3 numbers
+            int A, B,C;
+            Console.WriteLine(" Enter the values ");
+            A = int.Parse(Console.ReadLine());
+            B = int.Parse(Console.ReadLine());
+            C = int.Parse(Console.ReadLine());
+            if (A > B && A>C)
+            {
+                Console.WriteLine("A is greatest ");
+            }
+            else if (B> C)
+            {
+                Console.WriteLine(" B is greatest ");
+            }
+            else
+            {
+                Console.WriteLine("C is greatest ");
+            }
+            //swap 2 numbers without using 3rd variable
+           int value1, value2;
+           Console.WriteLine(" Enter values ");
+           value1 = int.Parse(Console.ReadLine());
+           value2 = int.Parse(Console.ReadLine());
+           Console.WriteLine("Before Swap value1 =" +value1+ " value2 = " +value2);
+           value1 = value1 + value2;
+           value2 = value1 - value2;
+           value1 = value1 - value2;
+           Console.WriteLine("After Swap value1 = " +value1+ " value2 = " +value2);
+            //Get emp details and display them
+            int empid;
+            string empName;
+            int empAge, empPhoneno;
+            Console.WriteLine(" Enter values ");
+            Console.WriteLine(" Enter Employee Id ");
+            empid = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Enter Employee name ");
+            empName = Console.ReadLine();
+            Console.WriteLine(" Enter Employee age ");
+            empAge = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Enter Employee phone no ");
+            empPhoneno = int.Parse(Console.ReadLine());
+            Console.WriteLine("empid= " +empid+ "empname= " +empName+ "emp Age = " +empAge+ " emp Phoneno =" +empPhoneno);
+
+
+        }
+    }
+}
